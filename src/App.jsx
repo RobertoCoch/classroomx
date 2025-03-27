@@ -17,7 +17,7 @@ function App() {
 
       
 
-        <section className='flex flex-col w-screen h-auto items-center justify-center'>
+        <section className='flex flex-col w-screen h-auto items-center justify-center bg-[#474646] md:flex-row'>
           {/*TAREAS*/}
           <div className='bg-[#EDEDED] w-70 h-40 flex flex-row rounded-md mt-10 mb-10'>
             <div className='bg-[#CBCBCB] w-5 h-40 rounded-l-md'></div>
@@ -60,7 +60,7 @@ function App() {
           </div>
         </section>
 
-        <section className='w-screen h-30 bg-[#2B2B2B] flex justify-center items-center'>
+        <section className='w-screen h-30  bg-[#2B2B2B] flex justify-center items-center'>
           <p className='text-white'>© 2025 Classroom X. All rights deserved</p>
         </section>
 

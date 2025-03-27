@@ -9,7 +9,7 @@ export default function Sidebar (){
                 <div className="flex flex-row items-center h-20">
                     <p className="text-3xl ml-3 text-white">Classroom X</p>
                     <button onClick={() => setMostrar(!mostrar)} >
-                        <img className="ml-10 w-10 h-10" src="./public/images/backreturn.png" alt="" />
+                        <img className="ml-10 w-10 h-10" src="/src/images/backreturn.png" alt="" />
                     </button>
                 </div>
                 
@@ -17,21 +17,21 @@ export default function Sidebar (){
             </div>
             <div >
                 <button className="h-15 bg-[#585757] flex flex-row items-center w-5/6 mt-5 mb-5 rounded-r-lg">
-                    <img className="ml-3 w-10 h-10" src="./public/images/home.png" alt="" />
+                    <img className="ml-3 w-10 h-10" src="/src/images/home.png" alt="" />
                     <p className="ml-3 text-white">Menu</p>
                 </button >
                 <button className="h-15 bg-[#585757] flex flex-row items-center w-5/6 mb-5 rounded-r-lg">
-                    <img className="ml-3 w-10 h-10" src="./public/images/book.png" alt="" />
+                    <img className="ml-3 w-10 h-10" src="/src/images/book.png" alt="" />
                     <p className="ml-3 text-white">Clases</p>
                 </button>
                 <button className="h-15 bg-[#585757] flex flex-row items-center w-5/6 mb-5  rounded-r-lg">
-                    <img  className="ml-3 w-10 h-10" src="./public/images/settings.png" alt="" />
+                    <img  className="ml-3 w-10 h-10" src="/src/images/settings.png" alt="" />
                     <p className="ml-3 text-white">Configuracion</p>
                 </button>
             </div>
             <div className="mt-110">
                 <button className="flex flex-row justify-center items-center">
-                    <img className="ml-3 w-10 h-10" src="./public/images/help.png" alt="" />
+                    <img className="ml-3 w-10 h-10" src="/src/images/help.png" alt="" />
                     <p className="ml-3 text-white">Ayuda</p>
                 </button>
             </div>
