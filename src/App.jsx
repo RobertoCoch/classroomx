@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
+import Weather from './Weather'
 
 function App() {
   const [count, setCount] = useState(0)
