@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import Clases from "./components/Clases";
 import Tareas from "./components/Tareas";
 import { NavLink } from "react-router";
+import backreturn from './images/backreturn.png'
+import profile from './images/profile.png'
 function User(){
     return(
         <>
@@ -10,14 +12,14 @@ function User(){
             <div className="w-screen bg-[#474646] pt-5 pb-5 pl-2">
               <NavLink to="../" end>
                 <button className="flex flex-row items-center">
-                  <img className="w-10 h-10" src="/src/images/backreturn.png" alt="" />
+                  <img className="w-10 h-10" src={backreturn} alt="" />
                   <h2 className="ml-3 text-white text-2xl">Regresar</h2>
                 </button>
               </NavLink> 
             </div>
 
             <section className="w-screen bg-[#474646] flex flex-col items-center">
-              <img className="w-50 h-50 mb-7" src="/src/images/profile.png" alt="" />
+              <img className="w-50 h-50 mb-7" src={profile} alt="" />
               <h2 className="text-white text-4xl font-extrabold">Roberto Contreras</h2>
               <p className="text-white mb-5">@roberto_contreras</p>
               <button className="bg-[#EDEDED] w-40 h-12 rounded-xl"><p className="">Editar perfil</p></button>
