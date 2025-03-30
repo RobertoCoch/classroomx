@@ -4,7 +4,10 @@ import Tareas from "./components/Tareas";
 import { NavLink } from "react-router";
 import backreturn from './images/backreturn.png'
 import profile from './images/profile.png'
+import { useState } from "react";
+
 function User(){
+    const [activarComponente, setActivarComponente] = useState("componente1");
     return(
         <>
         <section className="flex flex-col bg-[#474646] font-spartan">
@@ -26,10 +29,10 @@ function User(){
             </section>
 
             <div className="w-screen flex flex-row bg-[#474646] pt-15 pb-5 justify-center ">
-              <button className="border-b-[#474646] focus:border-b-white border-b-4 mr-5">
+              <button onClick={() => setActivarComponente("componente1")} className="border-b-[#474646] focus:border-b-white border-b-4 mr-5">
                 <p className="text-white font-medium text-2xl">Clases</p>
               </button>
-              <button className="border-b-[#474646] focus:border-b-white border-b-4 mr-5">
+              <button onClick={() => setActivarComponente("componente2")} className="border-b-[#474646] focus:border-b-white border-b-4 mr-5">
                 <p className="text-white font-medium text-2xl">Tareas</p>
               </button>
               <button className="border-b-[#474646] focus:border-b-white border-b-4 mr-5">
@@ -38,7 +41,13 @@ function User(){
             </div>
 
             <section>
-              <Tareas></Tareas>
+              <div className="componente1">
+                {activarComponente === "componente1" && (<Clases></Clases> )}
+              </div>
+              
+              <div className="componente2">
+                {activarComponente === "componente2" && (<Tareas></Tareas>)}
+              </div>
             </section>
           </section>
         </>
