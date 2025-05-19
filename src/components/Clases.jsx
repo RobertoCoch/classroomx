@@ -3,7 +3,7 @@ import { useState } from "react";
 function Clase ({materia, estado, fecha}){
     return (
         <>
-            <div className="flex flex-row justify-around w-full pt-5 pb-5 pl-2 pr-2 ">
+            <div className="flex flex-row justify-around w-full pt-5 pb-5 pl-2 pr-2  rounded-md">
                 <div>
                     <div>
                         <p>{materia}</p>
